@@ -1,11 +1,11 @@
+/*
+Copyright © 2025 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import (
-	"mycli/cmd/commands"
-	"mycli/cmd/root"
-)
+import "mycli/cmd"
 
 func main() {
-	commands.StartExecute()
-	root.Execute()
+	cmd.Execute()
 }
