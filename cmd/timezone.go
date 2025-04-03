@@ -19,6 +19,7 @@ var timezoneCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		timezone := args[0]
 		flag, _ := cmd.Flags().GetString("format")
+		fmt.Println(flag)
 		timeNow, err := GetTimeZone(timezone, flag)
 		if err != nil {
 			log.Fatalln("Неверная временная зона")
@@ -29,14 +30,5 @@ var timezoneCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(timezoneCmd)
-
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// timezoneCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
 	timezoneCmd.Flags().String("format", "", "Выводит время в формате yyyy-mm-dd")
 }
