@@ -1,4 +1,4 @@
-module go-lxg
+module github.com/IgorFilin/go-lxg
 
 go 1.24.0
 

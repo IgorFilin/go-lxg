@@ -3,7 +3,7 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
-import "go-lxg/cmd"
+import "github.com/IgorFilin/go-lxg/cmd"
 
 func main() {
 	cmd.Execute()
