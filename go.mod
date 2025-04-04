@@ -1,4 +1,4 @@
-module mycli
+module lxg
 
 go 1.24.0
 

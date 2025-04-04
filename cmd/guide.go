@@ -12,7 +12,7 @@ import (
 
 // linuxguideCmd represents the linuxguide command
 var linuxguideCmd = &cobra.Command{
-	Use:   "linuxguide",
+	Use:   "guide",
 	Short: "Мини гайд по командам линукса",
 	Long: `Команды линукса разбиты по темам, выберете нужную и вы получите список`,
 	Run: func(cmd *cobra.Command, args []string) {
@@ -23,6 +23,7 @@ var linuxguideCmd = &cobra.Command{
 				"Команды пользователей",
 				"Сетевые команды", 
 				"Работа с файлами", 
+				"Тренажёр",
 			},
 		}
 	

@@ -46,28 +46,12 @@
           "examples": ["chgrp group file", "sudo chgrp -R adm dir"]
         },
         {
-          "name": "Специальные права",
-          "items": [
-            {
-              "command": "chmod +s file",
-              "description": "SUID/SGID (запуск от владельца/группы)",
-              "examples": ["chmod 4755 /usr/bin/passwd"]
-            },
-            {
-              "command": "chmod +t dir",
-              "description": "Sticky-bit",
-              "examples": ["chmod 1777 /tmp"]
-            }
-          ]
-        },
-        {
           "name": "umask",
           "description": "Установка маски прав по умолчанию",
           "examples": [
             "umask (просмотр текущей)",
             "umask 027 (установка новой)"
-          ],
-          "note": "Права = Базовые (666 для файлов, 777 для папок) — umask"
+          ]
         },
         {
           "name": "ACL",
@@ -82,31 +66,6 @@
               "description": "Просмотр ACL"
             }
           ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Опасные права",
-          "content": "Избегайте chmod 777",
-          "command": "find /path -perm 777 -ls"
-        },
-        {
-          "title": "Скрипты",
-          "content": "Для исполняемых файлов: chmod +x script.sh"
-        },
-        {
-          "title": "Директории",
-          "content": "Обязательно +x: chmod 755 dir/"
-        }
-      ],
-      "examples": [
-        {
-          "description": "Запретить доступ всем кроме владельца",
-          "command": "chmod 700 секретный_файл"
-        },
-        {
-          "description": "Доступ для группы developers",
-          "commands": ["chgrp developers проект/", "chmod 750 проект/"]
         }
       ]
     }
