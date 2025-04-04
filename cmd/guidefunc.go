@@ -39,7 +39,7 @@ func createdStructureForReading() {
 		} `json:"data"`
 	 }
 	//  var resultOutput string
-	 jsonData, err := os.ReadFile("./data/permission.json")
+	 jsonData, err := os.ReadFile("/data/permission.json")
 	 if err != nil {
 		fmt.Println(err)
 	 } else {
