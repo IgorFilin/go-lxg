@@ -1,4 +1,4 @@
-module lxg
+module go-lxg
 
 go 1.24.0
 
